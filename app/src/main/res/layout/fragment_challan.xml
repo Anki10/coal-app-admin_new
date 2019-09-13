@@ -1,0 +1,346 @@
+ <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.anova.indiaadmin.ChallanFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="30dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/quantotyLiftImage"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/lift" />
+
+                <EditText
+                    android:id="@+id/challanNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="Add challan number"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorLineGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sampleImage"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/sample" />
+
+                <TextView
+                    android:id="@+id/qciNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QCI/COAL/SUBSIDIARY/LOC/"
+                    android:lineSpacingExtra="@dimen/text_size_xsmall"
+                    android:textColor="@color/colorDarkGrey"
+                    android:scrollHorizontally="true"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:text="Scan QR Code" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/customerQR"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/grey_layout_border"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="90dp"
+                                android:layout_height="60dp"
+
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/customerQRImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qr_code" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/dark_grey_filled"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/customerQRStatus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/add" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_customer"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CUSTOMER" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/labQR"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/grey_layout_border"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="90dp"
+                                android:layout_height="60dp"
+
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/labQRImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qr_code" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/dark_grey_filled"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/labQRStatus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/add" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="COAL COMPANY" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/qciQR"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/grey_layout_border"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="90dp"
+                                android:layout_height="60dp"
+
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/qciQRImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qr_code" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/dark_grey_filled"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/qciQRStatus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/add" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QCI" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/refereeQR"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/grey_layout_border"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="90dp"
+                                android:layout_height="60dp"
+
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/refereeQRImage"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/qr_code" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/dark_grey_filled"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/refereeQRStatus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/add" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="REFEREE" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/curve_yellow_button"
+                android:paddingLeft="50dp"
+                android:textSize="18sp"
+                android:paddingRight="50dp"
+                android:text="Submit"
+                android:textColor="@color/colorGrey" />
+
+        </LinearLayout>
+    </ScrollView>

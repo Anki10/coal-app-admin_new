@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.anova.indiaadmin.UnpreparedStage1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGrey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/backLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/steptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/logoutLayout"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/logoutLayout"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoutButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/logout" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Sample Details "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="12dp"
+                android:visibility="gone"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Challan Id : "
+                   android:textColor="@color/colorDarkGrey"
+                   android:textSize="14sp"
+                   android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/challan_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Challan Number"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mode : "
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mode"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of sampling : "
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/typeSampling"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sampling Type"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorDarkGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="Customer Details "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCustomerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/curve_yellow_button"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="NEXT"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anova.indiaadmin.CollectionCaptureImages">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/quantotyLiftImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/lift" />
+
+            <EditText
+                android:id="@+id/challanNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Add challan number"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:textColorHint="@color/colorLineGrey"
+                android:textColor="@color/colorDarkGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sampleImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/sample" />
+
+            <TextView
+                android:id="@+id/qciNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QCI/COAL/SUBSIDIARY/LOC/"
+                android:lineSpacingExtra="@dimen/text_size_xsmall"
+                android:textColor="@color/colorDarkGrey"
+                android:scrollHorizontally="true"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorBlack"
+        android:text="SAVE YOUR LOCATION"/>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Capture images"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center_horizontal"
+            android:text="3 Photographs, Comprising"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Sample bag numbers, truck numbers, rake numbers"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llImageCollection1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_layout_border"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_image_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_grey_filled"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection1Status"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llImageCollection2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_layout_border"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/ic_image_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_grey_filled"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection2Status"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llImageCollection3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/grey_layout_border"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="90dp"
+                    android:layout_height="60dp"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_image_black_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_grey_filled"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImageCollection3Status"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/add" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:background="@drawable/curve_yellow_button"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="Save"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+
+</LinearLayout>
+
+</ScrollView>

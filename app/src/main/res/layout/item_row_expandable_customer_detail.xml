@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/typeSample"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:id="@+id/downArrow"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="4dp"
+            android:padding="6dp"
+            android:src="@drawable/arrow_down_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorLineGrey"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/collapsableView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Auction : "
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/auctionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auction Type"
+                android:textSize="14sp"
+                android:textColor="@color/colorDarkGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total quantity lifted : "
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/quantity_lifted"
+                android:text="Total quantity lifted"
+                android:textColor="@color/colorDarkGrey"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Declared grade : "
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/declaredGrade"
+                android:text="Declared Grade"
+                android:textColor="@color/colorDarkGrey"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

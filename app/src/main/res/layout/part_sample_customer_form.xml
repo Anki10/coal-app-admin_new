@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/grey_layout_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/emailImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/user" />
+
+            <Spinner
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fsaLayout"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/locationImage"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fsa" />
+
+                <EditText
+                    android:id="@+id/fsaNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="FSA Number"
+                    android:inputType="textPersonName"
+                    android:singleLine="true"
+                    android:textColor="@color/colorLineGrey"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dataImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/document" />
+
+            <EditText
+                android:id="@+id/doDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="DO Details"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:textColor="@color/colorLineGrey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorLineGrey"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Do_add_view"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/plus_icons" />
+
+                <ImageView
+                    android:id="@+id/Do_view"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/view_icon" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/data"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/document" />
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/colorLineGrey"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/quantotyLiftImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/grade" />
+
+            <EditText
+                android:id="@+id/declaredGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Declared Grade"
+                android:inputType="number"
+                android:maxLength="2"
+                android:singleLine="true"
+                android:textColor="@color/colorLineGrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/liftImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/truck" />
+
+            <EditText
+                android:id="@+id/totalNumberTruck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Total no. of Truck"
+                android:inputType="number"
+                android:maxLength="4"
+                android:singleLine="true"
+                android:textColor="@color/colorLineGrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/auctionImage"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/truck" />
+
+            <EditText
+                android:id="@+id/totalNumberTruckSampled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Total no. of Truck Sampled"
+                android:inputType="number"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:textColor="@color/colorLineGrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorLineGrey"
+            android:orientation="vertical"></LinearLayout>
+
+        <Button
+            android:id="@+id/addCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:background="@drawable/dark_grey_layout_border"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="ADD CUSTOMER"
+            android:textColor="@color/colorGrey" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.anova.indiaadmin.ChooseStepActivity">
+
+    <ImageView
+        android:layout_width="@dimen/thumb_large_height"
+        android:layout_height="@dimen/thumb_large_height"
+        android:layout_marginTop="@dimen/margin_large"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_collection_stage"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_height="@dimen/big_button_height"
+        android:background="@drawable/bg_grey_rounded"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/ic_xnormal_square"
+            android:layout_height="@dimen/ic_xnormal_square"
+            android:src="@drawable/document"
+            android:layout_marginLeft="@dimen/margin_xmedium"
+            android:tint="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainYellow"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:text="Collection Stage"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_preparation_stage"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_button_height"
+        android:background="@drawable/bg_grey_rounded"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/ic_xnormal_square"
+            android:layout_height="@dimen/ic_xnormal_square"
+            android:src="@drawable/sample"
+            android:layout_marginLeft="@dimen/margin_xmedium"
+            android:tint="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainYellow"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:text="Preparation Stage"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mark_in_transit"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_button_height"
+        android:background="@drawable/bg_grey_rounded"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/ic_xnormal_square"
+            android:layout_height="@dimen/ic_xnormal_square"
+            android:src="@drawable/truck"
+            android:layout_marginLeft="@dimen/margin_xmedium"
+            android:tint="@color/colorWhite"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMainYellow"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:text="Mark in Transit"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:textStyle="italic"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_large"
+        android:text="Logout"/>
+
+</LinearLayout>

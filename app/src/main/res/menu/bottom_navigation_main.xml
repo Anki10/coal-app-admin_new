@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sample"
+        android:enabled="true"
+        android:title="SAMPLE DETAILS"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_customer"
+        android:enabled="true"
+        android:title="CUSTOMERS"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_challan"
+        android:enabled="true"
+        android:title="PHOTOS"
+        app:showAsAction="ifRoom" />
+</menu>

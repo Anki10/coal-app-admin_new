@@ -1,0 +1,81 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    signingConfigs {
+        Editsoft {
+            keyAlias 'EditsoftKey'
+            keyPassword 'editsoft@123'
+            storeFile file('/Users/iqbal/Editsoft/Android/editsoftkey.jks')
+            storePassword 'editsoft@123'
+        }
+    }
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.anova.indiaadmin"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 24
+        versionName "3.2"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Editsoft
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.1'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+    implementation 'com.devs:acr:1.0.1'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+//    compile('org.apache.httpcomponents:httpmime:4.5.3') {
+//        exclude module: 'httpclient'
+//    }
+    implementation files('libs/httpcore-4.3-beta1.jar')
+    implementation files('libs/httpmime-4.3.jar')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
+        transitive = true;
+    }
+}

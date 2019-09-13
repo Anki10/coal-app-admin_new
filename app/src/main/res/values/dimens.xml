@@ -1,0 +1,121 @@
+<resources>
+    <!-- Default margin and text-sizes -->
+    <dimen name="margin_empty">-64dp</dimen>
+    <dimen name="margin_min">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_xmedium">12dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_xnormal">24dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_xlarge">48dp</dimen>
+    <dimen name="margin_xxlarge">64dp</dimen>
+    <dimen name="text_size_xsmall">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="margin_setting">12dp</dimen>
+    <dimen name="margin_report">12dp</dimen>
+    <dimen name="home_bottom_icon">22dp</dimen>
+    <dimen name="home_create_height">100dp</dimen>
+    <dimen name="home_tabicon_height">40dp</dimen>
+    <dimen name="title_options">48dp</dimen>
+    <dimen name="home_tab_elevation">2dp</dimen>
+    <dimen name="margin_home_view">-30dp</dimen>
+    <dimen name="title_logo_width">120dp</dimen>
+    <dimen name="title_logo_height">40dp</dimen>
+    <dimen name="title_logo_height_new">50dp</dimen>
+
+    <dimen name="add_seek_height">68dp</dimen>
+    <dimen name="tab_profile_height">48dp</dimen>
+    <dimen name="progress_thickness">8dp</dimen>
+    <dimen name="progress_bar_width">24dp</dimen>
+    <dimen name="home_title_margin">-16dp</dimen>
+    <dimen name="empty_view_image">128dp</dimen>
+    <dimen name="border_stroke">2dp</dimen>
+    <dimen name="border_corner">4dp</dimen>
+    <dimen name="button_height">36dp</dimen>
+    <dimen name="send_comment_width">48dp</dimen>
+    <dimen name="send_comment_height">40dp</dimen>
+    <dimen name="margin_title_icon">12dp</dimen>
+    <dimen name="add_record_icon">56dp</dimen>
+    <dimen name="add_close_icon">56dp</dimen>
+    <dimen name="add_close_margin">6dp</dimen>
+    <dimen name="create_user_image">32dp</dimen>
+    <dimen name="margin_create_text">12dp</dimen>
+    <dimen name="progress_small">32dp</dimen>
+    <dimen name="elevate_empty_view">4dp</dimen>
+
+    <!-- Login screen dimensions -->
+    <dimen name="splash_logo_width">200dp</dimen>
+    <dimen name="splash_logo_height">48dp</dimen>
+    <dimen name="edit_info_height">32dp</dimen>
+    <dimen name="login_button_width">120dp</dimen>
+    <dimen name="login_divider_width">60dp</dimen>
+    <dimen name="login_button_height">36dp</dimen>
+    <dimen name="social_button_size">36dp</dimen>
+    <dimen name="setting_divider_large">1dp</dimen>
+    <dimen name="setting_divider_normal">0.5dp</dimen>
+    <dimen name="setting_toggle_width">32dp</dimen>
+    <dimen name="setting_toggle_height">20dp</dimen>
+    <dimen name="setting_report_icon">20dp</dimen>
+    <dimen name="setting_report_image">200dp</dimen>
+    <dimen name="text_create_post">56dp</dimen>
+    <dimen name="create_option_icon">56dp</dimen>
+    <dimen name="create_option_margin">40dp</dimen>
+    <dimen name="icon_tag_remove">18dp</dimen>
+    <dimen name="search_tab_height">48dp</dimen>
+
+    <!-- Icon Dimensions -->
+    <dimen name="ic_xsmall_square">16dp</dimen>
+    <dimen name="ic_small_square">20dp</dimen>
+    <dimen name="ic_normal_square">24dp</dimen>
+    <dimen name="ic_xnormal_square">36dp</dimen>
+    <dimen name="ic_large_square">48dp</dimen>
+
+    <!-- Custom Create Post buttons -->
+    <dimen name="cp_btn_height">36dp</dimen>
+
+    <!-- Cells Dimensions -->
+
+    <dimen name="list_user_image">42dp</dimen>
+    <dimen name="cell_grid_size">140dp</dimen>
+    <dimen name="list_user_name">20sp</dimen>
+    <dimen name="list_action_icon">24dp</dimen>
+    <dimen name="list_action_margin">14dp</dimen>
+    <dimen name="list_type_text">18sp</dimen>
+    <dimen name="list_divider_width">1dp</dimen>
+    <dimen name="list_divider_height">16dp</dimen>
+    <dimen name="list_comment_image">48dp</dimen>
+    <dimen name="list_comment_delete">24dp</dimen>
+    <dimen name="list_comment_margin">12dp</dimen>
+
+    <dimen name="cell_search_image">200dp</dimen>
+    <dimen name="divider_normal">0.5dp</dimen>
+    <dimen name="cell_thumb_area">56dp</dimen>
+
+    <dimen name="list_media_icon">24dp</dimen>
+    <dimen name="grid_media_icon">36dp</dimen>
+
+    <dimen name="m_5">05dp</dimen>
+    <dimen name="m_10">10dp</dimen>
+    <dimen name="m_20">20dp</dimen>
+    <dimen name="m_26">26dp</dimen>
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="m_25">40dp</dimen>
+    <dimen name="m_30">30dp</dimen>
+
+    <!-- Thumbnail dimensions -->
+    <dimen name="thumb_large_height">100dp</dimen>
+    <dimen name="thumb_xnormal_height">64dp</dimen>
+    <dimen name="thumb_normal_height">48dp</dimen>
+
+    <!-- Big Button dimensions -->
+    <dimen name="big_button_height">64dp</dimen>
+    <dimen name="big_button_width">300dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
