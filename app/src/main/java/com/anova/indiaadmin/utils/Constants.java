@@ -5,7 +5,7 @@ package com.anova.indiaadmin.utils;
  */
 
 public class Constants {
-    public static final boolean IS_APP_PROD = false;
+    public static final boolean IS_APP_PROD = true;
     private static final String baseDomainProd = "https://qrcoal-api.qcin.org";
    // private static final String baseDomainBeta = "http://api.coal.editsoftnerds.com";
 

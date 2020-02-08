@@ -7,21 +7,24 @@ import android.graphics.PointF;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.anova.indiaadmin.R;
 import com.anova.indiaadmin.network.AppNetworkResponse;
 import com.anova.indiaadmin.utils.Constants;
-import com.dlazaro66.qrcodereaderview.QRCodeReaderView;
+import com.google.zxing.Result;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
-public class ScanQRActivity extends AppCompatActivity implements QRCodeReaderView.OnQRCodeReadListener,AppNetworkResponse {
+public class ScanQRActivity extends AppCompatActivity implements ZXingScannerView.ResultHandler, AppNetworkResponse {
 
-    private static QRCodeReaderView qrCodeReaderView;
+    private ZXingScannerView mScannerView;
 
     private String qr_code;
 
@@ -31,57 +34,31 @@ public class ScanQRActivity extends AppCompatActivity implements QRCodeReaderVie
         setContentView(R.layout.activity_scan_qr);
         ButterKnife.bind(this);
 
-        qrCodeReaderView = (QRCodeReaderView) findViewById(R.id.qrdecoderview);
-        qrCodeReaderView.setOnQRCodeReadListener(this);
-
-        // Use this function to enable/disable decoding
-        qrCodeReaderView.setQRDecodingEnabled(true);
-
-        // Use this function to change the autofocus interval (default is 5 secs)
-        qrCodeReaderView.setAutofocusInterval(1000);
-
-        // Use this function to enable/disable Torch
-        qrCodeReaderView.setTorchEnabled(true);
-
-        // Use this function to set front camera preview
-        qrCodeReaderView.setFrontCamera();
-
-        // Use this function to set back camera preview
-        qrCodeReaderView.setBackCamera();
+        ViewGroup contentFrame = (ViewGroup) findViewById(R.id.content_frame);
+        mScannerView = new ZXingScannerView(this);
+        contentFrame.addView(mScannerView);
     }
 
     @Override
-    public void onQRCodeRead(String text, PointF[] points) {
-        Log.e("yo", text);
-        // qrCodeReaderView.stopCamera();
-
-        qr_code = text;
+    public void handleResult(Result result) {
+        qr_code = result.getText();
         Intent returnIntent = new Intent();
         returnIntent.putExtra("result", qr_code);
         setResult(Activity.RESULT_OK, returnIntent);
         finish();
-
-     /*   JSONObject jsonObject = new JSONObject();
-        try {
-            jsonObject.put("qr_string", text);
-            Volley volley = Volley.getInstance();
-            volley.postSession(Constants.apiCheckScanned,jsonObject,ScanQRActivity.this, getFromPrefs(Constants.USER_SESSION),Constants.REQ_POST_QR_CODE_CHECK);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }*/
     }
-
 
     @Override
     protected void onResume() {
         super.onResume();
-        qrCodeReaderView.startCamera();
+        mScannerView.setResultHandler(this);
+        mScannerView.startCamera();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
+        mScannerView.stopCamera();
     }
 
     @OnClick(R.id.backLayout)
@@ -121,6 +98,7 @@ public class ScanQRActivity extends AppCompatActivity implements QRCodeReaderVie
 
         finish();
     }
+
 
 
 }

@@ -73,7 +73,6 @@ public class CustomerListFragment extends Fragment implements AppDatabaseRespons
 
     private String submit_status = "no";
 
-
     HomeActivity mCallback;
 
     String quantityLiftedPattern = "[0-9]{1,5}+(\\.[0-9]{1,2})?";

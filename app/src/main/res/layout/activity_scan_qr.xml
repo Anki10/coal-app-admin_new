@@ -1,48 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.anova.indiaadmin.ScanQRActivity">
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGrey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <RelativeLayout
+            android:id="@+id/backLayout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorDarkGrey"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <RelativeLayout
-                android:id="@+id/backLayout"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/imageButton"
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:src="@drawable/back_arrow" />
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/titleText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="Scan"
-                android:textColor="@color/colorWhite"
-                android:textSize="18sp" />
-        </LinearLayout>
+            android:singleLine="true"
+            android:text="Scan"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.dlazaro66.qrcodereaderview.QRCodeReaderView
-            android:id="@+id/qrdecoderview"
+        <FrameLayout
+            android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -53,4 +51,4 @@
             android:padding="50dp"
             app:srcCompat="@drawable/focus_box" />
     </RelativeLayout>
-    </LinearLayout>
+</LinearLayout>

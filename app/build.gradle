@@ -57,7 +57,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:support-v13:28.0.0'
     implementation 'com.jakewharton:butterknife:8.8.1'
-    implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+    implementation 'me.dm7.barcodescanner:zxing:1.9.8'
     implementation 'com.devs:acr:1.0.1'
     implementation 'com.orhanobut:logger:2.2.0'
     implementation 'com.facebook.stetho:stetho:1.5.0'
